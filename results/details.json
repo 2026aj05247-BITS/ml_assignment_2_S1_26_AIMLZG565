@@ -1,0 +1,247 @@
+{
+  "Logistic Regression": {
+    "metrics": {
+      "Accuracy": 0.9736842105263158,
+      "AUC": 0.9904100529100529,
+      "Precision": 0.975609756097561,
+      "Recall": 0.9523809523809523,
+      "F1": 0.963855421686747,
+      "MCC": 0.9433397594898876
+    },
+    "confusion_matrix": [
+      [
+        71,
+        1
+      ],
+      [
+        2,
+        40
+      ]
+    ],
+    "classification_report": {
+      "Benign (0)": {
+        "precision": 0.9726027397260274,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.9793103448275862,
+        "support": 72.0
+      },
+      "Malignant (1)": {
+        "precision": 0.975609756097561,
+        "recall": 0.9523809523809523,
+        "f1-score": 0.963855421686747,
+        "support": 42.0
+      },
+      "accuracy": 0.9736842105263158,
+      "macro avg": {
+        "precision": 0.9741062479117941,
+        "recall": 0.9692460317460317,
+        "f1-score": 0.9715828832571666,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9737105878629081,
+        "recall": 0.9736842105263158,
+        "f1-score": 0.9736164257756981,
+        "support": 114.0
+      }
+    },
+    "training_accuracy": 0.989010989010989,
+    "configuration": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('logisticregression',\n                 LogisticRegression(max_iter=3000, random_state=247))])"
+  },
+  "Decision Tree": {
+    "metrics": {
+      "Accuracy": 0.9210526315789473,
+      "AUC": 0.9136904761904762,
+      "Precision": 0.851063829787234,
+      "Recall": 0.9523809523809523,
+      "F1": 0.898876404494382,
+      "MCC": 0.8380140438509858
+    },
+    "confusion_matrix": [
+      [
+        65,
+        7
+      ],
+      [
+        2,
+        40
+      ]
+    ],
+    "classification_report": {
+      "Benign (0)": {
+        "precision": 0.9701492537313433,
+        "recall": 0.9027777777777778,
+        "f1-score": 0.935251798561151,
+        "support": 72.0
+      },
+      "Malignant (1)": {
+        "precision": 0.851063829787234,
+        "recall": 0.9523809523809523,
+        "f1-score": 0.898876404494382,
+        "support": 42.0
+      },
+      "accuracy": 0.9210526315789473,
+      "macro avg": {
+        "precision": 0.9106065417592887,
+        "recall": 0.9275793650793651,
+        "f1-score": 0.9170641015277665,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9262756764887768,
+        "recall": 0.9210526315789473,
+        "f1-score": 0.9218503375891834,
+        "support": 114.0
+      }
+    },
+    "training_accuracy": 0.989010989010989,
+    "configuration": "Pipeline(steps=[('decisiontreeclassifier',\n                 DecisionTreeClassifier(max_depth=5, min_samples_leaf=3,\n                                        random_state=247))])"
+  },
+  "KNN": {
+    "metrics": {
+      "Accuracy": 0.9649122807017544,
+      "AUC": 0.9983465608465609,
+      "Precision": 0.9318181818181818,
+      "Recall": 0.9761904761904762,
+      "F1": 0.9534883720930233,
+      "MCC": 0.9259891667402068
+    },
+    "confusion_matrix": [
+      [
+        69,
+        3
+      ],
+      [
+        1,
+        41
+      ]
+    ],
+    "classification_report": {
+      "Benign (0)": {
+        "precision": 0.9857142857142858,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.971830985915493,
+        "support": 72.0
+      },
+      "Malignant (1)": {
+        "precision": 0.9318181818181818,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9534883720930233,
+        "support": 42.0
+      },
+      "accuracy": 0.9649122807017544,
+      "macro avg": {
+        "precision": 0.9587662337662337,
+        "recall": 0.9672619047619048,
+        "f1-score": 0.9626596790042581,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9658578263841422,
+        "recall": 0.9649122807017544,
+        "f1-score": 0.9650731808230041,
+        "support": 114.0
+      }
+    },
+    "training_accuracy": 0.9714285714285714,
+    "configuration": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('kneighborsclassifier', KNeighborsClassifier(n_neighbors=7))])"
+  },
+  "Naive Bayes": {
+    "metrics": {
+      "Accuracy": 0.9473684210526315,
+      "AUC": 0.992063492063492,
+      "Precision": 0.875,
+      "Recall": 1.0,
+      "F1": 0.9333333333333333,
+      "MCC": 0.8955910525085281
+    },
+    "confusion_matrix": [
+      [
+        66,
+        6
+      ],
+      [
+        0,
+        42
+      ]
+    ],
+    "classification_report": {
+      "Benign (0)": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1-score": 0.9565217391304348,
+        "support": 72.0
+      },
+      "Malignant (1)": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1-score": 0.9333333333333333,
+        "support": 42.0
+      },
+      "accuracy": 0.9473684210526315,
+      "macro avg": {
+        "precision": 0.9375,
+        "recall": 0.9583333333333333,
+        "f1-score": 0.9449275362318841,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9539473684210527,
+        "recall": 0.9473684210526315,
+        "f1-score": 0.9479786422578186,
+        "support": 114.0
+      }
+    },
+    "training_accuracy": 0.9296703296703297,
+    "configuration": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('gaussiannb', GaussianNB())])"
+  },
+  "Support Vector Machine": {
+    "metrics": {
+      "Accuracy": 0.9912280701754386,
+      "AUC": 1.0,
+      "Precision": 0.9767441860465116,
+      "Recall": 1.0,
+      "F1": 0.9882352941176471,
+      "MCC": 0.9814164735593364
+    },
+    "confusion_matrix": [
+      [
+        71,
+        1
+      ],
+      [
+        0,
+        42
+      ]
+    ],
+    "classification_report": {
+      "Benign (0)": {
+        "precision": 1.0,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.993006993006993,
+        "support": 72.0
+      },
+      "Malignant (1)": {
+        "precision": 0.9767441860465116,
+        "recall": 1.0,
+        "f1-score": 0.9882352941176471,
+        "support": 42.0
+      },
+      "accuracy": 0.9912280701754386,
+      "macro avg": {
+        "precision": 0.9883720930232558,
+        "recall": 0.9930555555555556,
+        "f1-score": 0.99062114356232,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9914320685434516,
+        "recall": 0.9912280701754386,
+        "f1-score": 0.9912489986793391,
+        "support": 114.0
+      }
+    },
+    "training_accuracy": 0.9846153846153847,
+    "configuration": "Pipeline(steps=[('standardscaler', StandardScaler()), ('svc', SVC())])"
+  }
+}
