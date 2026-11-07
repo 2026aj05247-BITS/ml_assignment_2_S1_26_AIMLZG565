@@ -98,7 +98,9 @@ On startup, the app evaluates the bundled `test_data.csv`. Uploading that same f
 
 The CSV must contain all 30 feature columns and the actual `diagnosis` target. Feature values must be numeric, finite and non-missing; target values must be 0 or 1. Missing, extra or duplicate columns are rejected. Column order is corrected automatically. The application accepts up to 10,000 rows and 5 MB. Use held-out data for meaningful evaluation.
 
-**Live Streamlit application:** Deployment link will be added after deployment and verification.
+**Live Streamlit application:** [Open CellScope](https://mlassignment2s126aimlzg565-aimlaj05247.streamlit.app/)
+
+Deployed on Streamlit Community Cloud and tested successfully.
 
 ## Reproduce and run
 
@@ -132,7 +134,11 @@ python -m streamlit run app.py --server.address 0.0.0.0
 
 The app can use the committed model files without training again. To regenerate the local training artifacts, run `python train.py --environment local` with the project environment, followed by `python update_results.py`. After regenerating results, check that the observations still match the measured values. Automated checks cover known metric calculations, CSV validation, disjoint train/test indices, saved-model results and all five Streamlit model selections.
 
-Current reported artifacts were generated locally. BITS Virtual Lab execution and its required screenshot remain to be completed.
+### BITS Virtual Lab execution
+
+Completed on **7 November 2026** using the BITS Virtual Lab account `s2026aj05247`. Dependencies were installed, all five automated verification tests passed, and `python train.py --environment bits-lab` successfully trained and evaluated all five models using 455 training rows and 114 test rows. The lab metrics match the comparison table above to four decimal places.
+
+The Streamlit application was also launched in the lab. The public GitHub repository and deployed Streamlit application were opened from the lab browser. Sequentially labelled screenshots of installation, verification, training, local app execution, repository access and deployed app access are included in the submission PDF.
 
 ## Repository contents
 
